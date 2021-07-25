@@ -27,7 +27,7 @@ export default {
       type: Boolean
     },
     items: {
-      type: Object,
+      type: Array,
       required: true
     }
   },
