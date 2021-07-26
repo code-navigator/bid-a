@@ -2,6 +2,7 @@
   v-app-bar(
     fixed
     app
+    color="primary"
   )
     v-app-bar-nav-icon(
       @click.stop="toggleDrawer"

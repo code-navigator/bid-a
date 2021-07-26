@@ -1,24 +1,20 @@
-<template>
-  <v-app dark>
-    <TheDrawer
+<template lang="pug">
+  v-app(
+    light
+  )
+    TheDrawer(
       :drawer="drawer"
       :items="items"
-    />
+    )
 
-    <TheHeader
-      @click="toggleDrawer"
+    TheHeader(
       :title="title"
-    />
-    <v-app-bar
-      fixed
-      app
-    >
-      <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-toolbar-title  />
-    </v-app-bar>
-    <TheContent />
-    <TheFooter />
-  </v-app>
+      @click="toggleDrawer"
+    )
+
+    TheContent
+
+    TheFooter
 </template>
 
 <script>
@@ -38,7 +34,7 @@ export default {
           to: '/inspire'
         }
       ],
-      title: 'Vuetify.js'
+      title: 'Bid Module'
     }
   },
   methods: {
