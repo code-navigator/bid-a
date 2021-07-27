@@ -1,7 +1,32 @@
 <template lang="pug" >
   splitpanes
-    pane 1
-    pane 2
+    pane(
+      size="15"
+    )
+      splitpanes(
+        horizontal
+      )
+        pane
+          v-card(
+            height="100%"
+            width="100%"
+            color="secondary"
+          )
+            v-toolbar(
+              dense
+            )
+
+        pane
+          v-card(
+            height="100%"
+            width="100%"
+            color="secondary"
+          )
+            v-toolbar(
+              dense
+            )
+
+    pane 3
 
 </template>
 
